@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = { "src/test/resources/features/" }, 
 		glue = { "stepDefinitions", "hooks" }, 
 		plugin= {"pretty", "html:target/cucumber-reports.html", 
-				"json:target/cucumber-reports/cucumber.json",
+				"json:target/cucumber-reports/cucumber-reports.json",
 				"rerun:target/failedrerun.txt"},
 		tags= "not @Skip",
 	    monochrome = true,

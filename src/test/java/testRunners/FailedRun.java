@@ -10,8 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 
 		features = { "@target/failedrerun.txt" }, 
 		glue = { "stepDefinitions", "hooks" }, 
-		plugin= {"pretty", "html:target/cucumber-reports.html", 
-				"json:target/cucumber-reports/cucumber.json",
+		plugin= {"pretty", "html:target/cucumber-reports-failedtestcase.html", 
+				"json:target/cucumber-reports/cucumber-reports-failedtestcase.json",
 				 "rerun:target/failedrerun.txt"},
 	
 	    monochrome = true,
